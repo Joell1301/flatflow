@@ -69,6 +69,20 @@ h2 {
     color: #2563eb;
 }
 
+.card-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1;
+    min-width: 220px;
+    background-color: #f8fafc;
+    padding: 20px;
+    border-radius: 10px;
+}
+
 button {
     background-color: #2563eb;
     color: white;

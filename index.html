@@ -21,52 +21,60 @@
 
     <main>
 
-        <section>
-            <h2>WG Organisation einfach gemacht</h2>
+        <section class="hero">
+            <h2>Die moderne Plattform für deine WG</h2>
 
             <p>
-                Flatflow hilft Wohngemeinschaften dabei,
-                Aufgaben, Ausgaben und Termine zu organisieren.
+                Organisiere Aufgaben, Ausgaben und Termine
+                mit Flatflow einfach und übersichtlich.
             </p>
 
-            <button>Jetzt starten</button>
+            <button>Jetzt kostenlos starten</button>
         </section>
 
         <section>
             <h2>Funktionen</h2>
 
-            <div>
-                <h3>Aufgaben verwalten</h3>
-                <p>Mitbewohner können Aufgaben einfach organisieren.</p>
-            </div>
+            <div class="card-container">
 
-            <div>
-                <h3>Ausgaben teilen</h3>
-                <p>Gemeinsame Kosten werden automatisch berechnet.</p>
-            </div>
+                <div class="card">
+                    <h3>Aufgaben verwalten</h3>
+                    <p>Mitbewohner können Aufgaben einfach organisieren.</p>
+                </div>
 
-            <div>
-                <h3>Kalender und Termine</h3>
-                <p>Wichtige Termine bleiben für alle sichtbar.</p>
+                <div class="card">
+                    <h3>Ausgaben teilen</h3>
+                    <p>Gemeinsame Kosten werden automatisch berechnet.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Kalender und Termine</h3>
+                    <p>Wichtige Termine bleiben für alle sichtbar.</p>
+                </div>
+
             </div>
         </section>
 
         <section>
             <h2>Preise</h2>
 
-            <div>
-                <h3>Free</h3>
-                <p>Kostenlos für kleine Wohngemeinschaften.</p>
-            </div>
+            <div class="card-container">
 
-            <div>
-                <h3>Premium</h3>
-                <p>Mehr Funktionen und unbegrenzte Mitglieder.</p>
-            </div>
+                <div class="card">
+                    <h3>Free</h3>
+                    <p>Kostenlos für kleine Wohngemeinschaften.</p>
+                </div>
 
-            <div>
-                <h3>WG Pro</h3>
-                <p>Ideal für große WGs und Studentenheime.</p>
+                <div class="card">
+                    <h3>Premium</h3>
+                    <p>Mehr Funktionen und unbegrenzte Mitglieder.</p>
+                </div>
+
+                <div class="card">
+                    <h3>WG Pro</h3>
+                    <p>Ideal für große WGs und Studentenheime.</p>
+                </div>
+
             </div>
         </section>
 
@@ -89,22 +97,13 @@
 
             <form>
                 <label for="name">Name</label>
-                <br>
                 <input type="text" id="name" name="name">
 
-                <br><br>
-
                 <label for="email">E-Mail</label>
-                <br>
                 <input type="email" id="email" name="email">
 
-                <br><br>
-
                 <label for="message">Nachricht</label>
-                <br>
                 <textarea id="message" name="message" rows="5"></textarea>
-
-                <br><br>
 
                 <button type="submit">Absenden</button>
             </form>
