@@ -10,13 +10,32 @@ body {
 }
 
 header {
-    background-color: #2563eb;
+    background: linear-gradient(135deg, #0f4fc9, #1d8cf8);
     color: white;
     padding: 25px;
     text-align: center;
     position: sticky;
     top: 0;
     z-index: 1000;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.logo-area img {
+    width: 55px;
+    height: 55px;
+    border-radius: 12px;
+}
+
+.logo-area h1 {
+    margin: 0;
+    font-size: 34px;
+    font-weight: 800;
 }
 
 nav {
@@ -26,7 +45,7 @@ nav {
 nav a {
     color: white;
     text-decoration: none;
-    margin: 0 15px;
+    margin: 0 10px;
     font-weight: 600;
     transition: 0.3s;
 }
@@ -36,7 +55,7 @@ nav a:hover {
 }
 
 main {
-    max-width: 1000px;
+    max-width: 1100px;
     margin: auto;
     padding: 40px 20px;
 }
@@ -44,9 +63,9 @@ main {
 section {
     background-color: white;
     margin-bottom: 30px;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    padding: 35px;
+    border-radius: 18px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.08);
     transition: 0.3s;
 }
 
@@ -55,25 +74,48 @@ section:hover {
 }
 
 .hero {
-    background: linear-gradient(135deg, #2563eb, #3b82f6);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    background: linear-gradient(135deg, #0f4fc9, #1d8cf8);
     color: white;
-    text-align: center;
-    padding: 80px 30px;
+    padding: 80px 40px;
+    overflow: hidden;
+}
+
+.hero-content {
+    flex: 1;
 }
 
 .hero h2 {
     color: white;
-    font-size: 42px;
+    font-size: 46px;
+    margin-top: 0;
 }
 
 .hero p {
     font-size: 18px;
     max-width: 600px;
-    margin: 0 auto 25px auto;
+    margin-bottom: 25px;
+}
+
+.hero-image {
+    flex: 1;
+    background-color: rgba(255,255,255,0.18);
+    border-radius: 25px;
+    padding: 30px;
+    text-align: center;
+}
+
+.hero-image img {
+    max-width: 100%;
+    border-radius: 18px;
 }
 
 h2 {
     color: #2563eb;
+    font-size: 30px;
 }
 
 .card-container {
@@ -86,8 +128,10 @@ h2 {
     flex: 1;
     min-width: 220px;
     background-color: #f8fafc;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 25px;
+    border-radius: 16px;
+    text-align: center;
+    border: 1px solid #e2e8f0;
     transition: 0.3s;
 }
 
@@ -96,18 +140,25 @@ h2 {
     background-color: #eff6ff;
 }
 
+.card-icon {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
 button {
-    background-color: #2563eb;
+    background-color: #f97316;
     color: white;
     border: none;
-    padding: 12px 20px;
-    border-radius: 6px;
+    padding: 14px 24px;
+    border-radius: 8px;
     cursor: pointer;
     transition: 0.3s;
+    font-weight: 700;
+    font-size: 16px;
 }
 
 button:hover {
-    background-color: #1d4ed8;
+    background-color: #ea580c;
     transform: scale(1.03);
 }
 
@@ -120,17 +171,24 @@ form {
 input,
 textarea {
     width: 100%;
-    padding: 10px;
-    border-radius: 6px;
+    padding: 12px;
+    border-radius: 8px;
     border: 1px solid #ccc;
     box-sizing: border-box;
+    font-family: inherit;
+}
+
+input:focus,
+textarea:focus {
+    outline: 3px solid #bfdbfe;
+    border-color: #2563eb;
 }
 
 footer {
     background-color: #1e293b;
     color: white;
     text-align: center;
-    padding: 25px;
+    padding: 30px;
 }
 
 footer nav {
@@ -143,14 +201,25 @@ footer nav a {
     margin: 0 10px;
 }
 
-@media (max-width: 600px) {
-    header {
-        padding: 20px 10px;
+@media (max-width: 800px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero h2 {
+        font-size: 34px;
     }
 
     nav a {
         display: block;
         margin: 10px 0;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 20px 10px;
     }
 
     main {
@@ -158,11 +227,7 @@ footer nav a {
     }
 
     section {
-        padding: 20px;
-    }
-
-    .hero h2 {
-        font-size: 30px;
+        padding: 22px;
     }
 
     button {
