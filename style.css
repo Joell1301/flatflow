@@ -38,6 +38,13 @@ header {
     font-weight: 800;
 }
 
+.logo-slogan {
+    margin: 2px 0 0 0;
+    font-size: 14px;
+    opacity: 0.9;
+    font-weight: 500;
+}
+
 nav {
     margin-top: 15px;
 }
@@ -154,8 +161,17 @@ h2 {
 }
 
 .card-icon {
-    font-size: 42px;
-    margin-bottom: 10px;
+    width: 54px;
+    height: 54px;
+    margin: 0 auto 14px auto;
+    border-radius: 50%;
+    background-color: #2563eb;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 18px;
 }
 
 button {
@@ -215,7 +231,6 @@ footer nav a {
 }
 
 @media (max-width: 800px) {
-
     .hero {
         flex-direction: column;
         text-align: center;
@@ -232,7 +247,6 @@ footer nav a {
 }
 
 @media (max-width: 600px) {
-
     header {
         padding: 20px 10px;
     }
