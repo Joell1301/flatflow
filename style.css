@@ -30,6 +30,9 @@ header {
     width: 55px;
     height: 55px;
     border-radius: 12px;
+    background-color: white;
+    padding: 6px;
+    object-fit: contain;
 }
 
 .logo-area h1 {
@@ -231,6 +234,7 @@ footer nav a {
 }
 
 @media (max-width: 800px) {
+
     .hero {
         flex-direction: column;
         text-align: center;
@@ -247,6 +251,7 @@ footer nav a {
 }
 
 @media (max-width: 600px) {
+
     header {
         padding: 20px 10px;
     }
